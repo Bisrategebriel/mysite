@@ -6,6 +6,7 @@
   <title>Bisrategebriel Fisseha</title>
   
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   
@@ -21,24 +22,143 @@
       <!-- <img src="img/logo.png" alt="logo" class="logo"> -->
       <h1 class="logo">BF</h1>
       <ul class="links">
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="portfolio.html">About</a></li>
-        <li><a href="portfolio.html">Blog</a></li>
-        <li><a href="portfolio.html">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section class="greeting-info">
-      <h1 class="hi">Hi </h1><br>
+    <section class="greeting-info animate__animated animate__fadeInLeft">
+      <h1 class="hi">Hi! </h1><br>
       <h1 class="my-name">I'm Bisrategebriel Fisseha</h1><br>
       <h4 class="my-info">A Tech Enthusiatic, Software Developer, <br> and Graphics Designer</h4>
     </section>
-    <section class="social-media-links">
-      <a href="twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-      <a href="linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
-      <a href="telegram.com"><img src="img/telegram2.png" alt="Telegram"></a>
+    <section class="social-media-links animate__animated animate__zoomIn animate__delay-20s">
+      <a href="https://twitter.com/bisrat22fish"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/bisrategebriel-fisseha-261b4415a/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://t.me/bisratops"><img src="img/telegram2.png" alt="Telegram"></a>
     </section>
   </header>
   <!-- end of header -->
+
+  <!-- portfolio -->
+  <section id="portfolio">
+    <div class="title">
+      <h2 class="p-header">Portfolio</h2>
+    </div>
+    <section class="my-category">
+      <section class="category-left">
+        <div class="container react r-bg"></div>
+        <div class="container js j-bg"></div>
+        <div class="container laravel l-bg"></div>
+        <div class="container node n-bg"></div>
+        <div class="container vue v-bg"></div>
+        <div class="container html hc-bg"></div>
+        <div class="container bootstrap bs-bg"></div>
+        <div class="container unity u-bg"></div>
+      </section>
+      <aside class="category-right">
+        <div class="project-types">
+          <span><h3>CATEGORIES</h3></span>
+          <button class="graphics">graphics</button>
+          <button class="web-programming">web programming</button>
+          <button class="games" onclick="showDiv()">games</button>
+          <button class="mob-programming">mobile programming</button>
+          <button class="ar">augmented reality</button>
+        </div>
+      </aside>
+    </section>
+  </section>
+  <!-- end of portfolio -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="title">
+      <h2 class="p-header">About</h2>
+    </div>
+    <div class="about-me">
+      <p class="my-main">
+        A Software Engineer, a Graphics Designer, a Tech 
+        Enthusiast who loves to share my knowledge with
+        people. I have a positive personal attributes.
+      </p>
+      <p class="leisure">
+        I like to play Football, watch movie, and read books in my leisure time.
+      </p>
+      <div class="profile-pic">
+        <img src="img/me.jpg" alt="Bisrat">
+      </div>
+      <div class="more-option">
+        <a href="#" class="more-blog">GoTo Blogs</a>
+        <a href="#" class="cv">Download CV</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end of About -->
+
+  <!-- blog -->
+  <section class="blog">
+    <div class="title">
+      <h2 class="p-header">Blog</h2>
+    </div>
+    <div class="blog-content">
+      <article class="single-content">
+        <img src="img/prog.png" alt="blog-image">
+        <div class="article-body">
+          <p class="topic">What programming is really about?</p>
+          <span id="date">December 2020</span>
+          <br>
+          <a href="" class="read-more">READ MORE</a>
+        </div>
+      </article>
+      <article class="single-content">
+        <img src="img/prog.png" alt="blog-image">
+        <div class="article-body">
+          <p class="topic">What programming is really about?</p>
+          <span id="date">December 2020</span>
+          <br>
+          <a href="" class="read-more">READ MORE</a>
+        </div>
+      </article>
+      <article class="single-content">
+        <img src="img/prog.png" alt="blog-image">
+        <div class="article-body">
+          <p class="topic">What is programming really about?</p>
+          <span id="date">December 2020</span>
+          <br>
+          <a href="" class="read-more">READ MORE</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- end of blog -->
+
+  <!-- contact  -->
+  <section id="contact">
+    <div class="title">
+      <h2 class="p-header">Contact</h2>
+    </div>
+    <div class="contact-form">
+      <div class="address social-media-links animate__animated animate__slideInRight">
+        <a href="https://twitter.com/bisrat22fish" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/bisrategebriel-fisseha-261b4415a/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://t.me/bisratops"><img src="img/telegram2.png" alt="Telegram"></a>
+      </div>
+      <form action="" method="POST" class="animate__animated animate__fadeInDown">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" id="message" cols="30" rows="15" placeholder="Your Message"></textarea>
+        <a href="mailto:bisrate22@gmail.com" class="sendmail">Send</a>
+      </form>
+    </div>
+  </section>
+  <!-- end of contact  -->
+
+  <!-- footer -->
+  <footer>
+    <h4 class="made-by">Copyright &copy; 2013 Designed and Made by <a href="https://kuraztech.com">Kuraztech</a></h4>
+  </footer>
+  <!-- end of footer -->
   
   <script src="js/jquery.min.js"></script>
   <script src="js/main.js"></script>
